@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-secondary);
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+:root{
+/* Primary Color: Dark Gray (#333333):
+
+Secondary Color: Teal (#007F7F):
+
+Accent Color: Orange (#FFA500):
+
+Highlight Color: Coral (#F05A28):
+
+Background Color: White (#FFFFFF): */
+
+    --ff-primary : 'Roboto', sans-serif;
+    --ff-secondary : 'Roboto', sans-serif;
+
+    --clr-primary : #F05A28;
+    --clr-secondary : #333333;
+    --clr-accent : ;
+    --clr-hover : ;
+
+    --clr-background : #fff;
+    --clr-text : #000000;
+
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ff-primary);
+    color: var(--clr-primary);
+}
+p, ul, ol, li, span {
+    font-family: var(--ff-secondary);
+    color: var(--clr-secondary);
+}
+
+/* general css */
+
+.main{
+    width: 100%;
+    background-color: var(--clr-background);
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+}
+nav{
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 2.5rem;
+}
+.navright{
+    display: flex;
+    gap: 40px;
+}
+a{
+    text-decoration: none;
+    color: var(--clr-text);
+    font-weight: 400;
+    font-size: 1.25vw;
+}
+
+.homemain{
+    padding: 15vw 15vw 10vw;
+}
+.homemain h3{
+    font-weight: 400;
+    font-size: 1.35rem;
+    margin-left: 7px;
+    letter-spacing: -.05vw;
+    margin-bottom: 1rem;
+    color: var(--clr-text);
+}
+.homemain div h1{
+    font-size: 7rem;
+    font-weight: 800;
+    letter-spacing: -6px;
+    line-height: 1;
+}
+.homemain div h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: 1px var(--clr-text);
+}
+
+.homelast{
+    padding: 0vw 15vw;
+}
+.homelast div{
+    width: 60%;
+}
+.homelast p{
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+.homelast p::selection{
+    color: var(--clr-background);
+    background-color: var(--clr-text);
+}
+
+.about{
+    padding: 10vw 15vw;
+}
+
+.aheading h1{
+    font-size: 3.5rem;
+    line-height: 1;
+    font-weight: 400;
+}
+.aheading h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: 1px var(--clr-text);
+}
+.about .adetail{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5vh;
+}
+.aleft{
+    width: 45%;
+    overflow: hidden;
+    height: inherit;
+}
+.aleft p{
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.aright{
+    height: inherit;
+    width: 45%;
+
+}
+.aright img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.project{
+    padding: 7vw 15vw;
+}
+.pheading h1{
+    font-size: 3.5rem;
+    line-height: 1;
+    font-weight: 400;
+}
+.pheading h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: 1px var(--clr-text);
+}
+
+
+/* project */
+.phandler{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    position: relative;
+    margin: 5rem 0;
+}
+.pdetail{
+    width: 40%;
+}
+.pdetail div{
+    display: flex;
+    flex-direction: column;
+}
+.pdetail div h5{
+    color: var(--clr-text);
+    font-size: 1.3rem;
+    font-weight: 300;
+
+}
+.pdetail div h1{
+    color: var(--clr-text);
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.pdetail div p{
+    background-color: var(--clr-primary);
+    color: var(--clr-background);
+    font-size: 1.3rem;
+    padding: 40px 30px;
+    border-radius: 10px;
+    z-index: 999;
+    width: 110%;
+    margin-bottom: 20px;
+}
+.pdetail div h4{
+    color: var(--clr-text);
+    font-size: 1.4rem;
+    font-weight: 400;
+    opacity: .9;
+}
+.pdetail div div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.pdetail div a{
+    color: var(--clr-text);
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.project .phandler:nth-child(3) div p{
+    top: 30%;
+    left: 50%;
+}
+.pimage{
+    width: 60%;
+}
+.pimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    z-index: -99;
+
+}
+
+
+.contact{
+    padding: 7vw 15vw;
+    display: flex;
+    justify-content: center;
+}
+.cheading{
+
+}
+.cheading h1{
+    font-size: 3.5rem;
+    line-height: 1;
+    font-weight: 400;
+}
+.cheading h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: 1px var(--clr-text);   
+}
+
+.cdetail{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+.cdetail h1{
+    font-size: 4.5rem;
+    margin-top: 1rem;
+    color: var(--clr-text);
+}
+.cdetail h5{
+    font-size: 1.5rem;
+    color: var(--clr-text);
+    opacity: .9;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+.cdetail button{
+    padding: 1.1rem 2.3rem;
+    font-size: 1.3rem;
+    border-color: var(--clr-primary);
+    background-color: var(--clr-background);
+    border-radius: 6px;
+}
+.cdetail span{
+    margin-top: 2rem;
+}
+
+footer{
+   display: flex;
+   justify-content: center;
+   font-size: 1rem;
+}
+
+.overlay{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    color: #F05A28;
+    padding: 0 4rem;
+    font-size: 1.3rem;
+}
+.overall{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: end;
+}
+.overleft .overleft-line{
+    height: 150px;
+    width: 0;
+    border: 1px solid black;
+}
+.overleft img{
+    width: 2rem;
+}
+
+.overright .overright-line{
+    height: 150px;
+    width: 0;
+    border: 1px solid black;
+}
+.overright p{
+    width: 2rem;
+    margin-bottom: 200px;
+    transform: rotate(90deg);
+}

@@ -55,13 +55,13 @@ p, ul, ol, li, span {
     min-height: 100vh;
 }
 nav{
-    padding: 30px 50px;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 nav img{
-    width: 2.5rem;
+    width: 2rem;
 }
 .navright{
     display: flex;
@@ -75,24 +75,25 @@ a{
 }
 
 .homemain{
-    padding: 15vw 15vw 10vw;
+    padding: 8vw 15vw 3vw;
 }
 .homemain h3{
     font-weight: 400;
-    font-size: 1.35rem;
-    margin-left: 7px;
+    font-size: 1rem;
+    /* margin-left: 7px; */
     letter-spacing: -.05vw;
     margin-bottom: 1rem;
     color: var(--clr-text);
 }
 .homemain div h1{
-    font-size: 7rem;
-    font-weight: 800;
-    letter-spacing: -6px;
-    line-height: 1;
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: -4px;
+    /* line-height: 1; */
 }
 .homemain div h1:nth-child(2){
     color: transparent;
+    letter-spacing: normal !important;
     -webkit-text-stroke: 1px var(--clr-text);
 }
 
@@ -100,15 +101,23 @@ a{
     padding: 0vw 15vw;
 }
 .homelast div{
-    width: 60%;
+    width: 80%;
 }
 .homelast p{
-    font-size: 1.7rem;
+    font-size: 1.1rem;
     font-weight: 400;
 }
 .homelast p::selection{
     color: var(--clr-background);
     background-color: var(--clr-text);
+}
+.homelast button{
+    padding: .7rem 2rem;
+    font-size: 1rem;
+    border-color: var(--clr-primary);
+    background-color: var(--clr-background);
+    border-radius: 6px;
+    margin-top: 2rem;
 }
 
 .about{
@@ -116,14 +125,14 @@ a{
 }
 
 .aheading h1{
-    font-size: 3.5rem;
+    font-size: 2rem;
     line-height: 1;
-    font-weight: 400;
+    font-weight: 600;
 }
-.aheading h1:nth-child(2){
+/* .aheading h1:nth-child(2){
     color: transparent;
     -webkit-text-stroke: 1px var(--clr-text);
-}
+} */
 .about .adetail{
     display: flex;
     justify-content: space-between;
@@ -131,35 +140,39 @@ a{
     margin-top: 5vh;
 }
 .aleft{
-    width: 45%;
+    width: 60%;
     overflow: hidden;
     height: inherit;
 }
 .aleft p{
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.2;
+    letter-spacing: .8px;
 }
 
 .aright{
     height: inherit;
-    width: 45%;
+    width: 40%;
+    display: flex;
+    justify-content: right;
 
 }
 .aright img{
-    width: 100%;
+    width: 80%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 8px;
 }
 
 .project{
     padding: 7vw 15vw;
 }
 .pheading h1{
-    font-size: 3.5rem;
+    font-size: 2rem;
     line-height: 1;
-    font-weight: 400;
+    font-weight: 600;
 }
 .pheading h1:nth-child(2){
     color: transparent;
@@ -172,7 +185,7 @@ a{
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 450px;
+    height: auto;
     position: relative;
     margin: 5rem 0;
 }
@@ -185,29 +198,31 @@ a{
 }
 .pdetail div h5{
     color: var(--clr-text);
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 300;
 
 }
 .pdetail div h1{
     color: var(--clr-text);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 20px;
 }
 .pdetail div p{
     background-color: var(--clr-primary);
     color: var(--clr-background);
-    font-size: 1.3rem;
-    padding: 40px 30px;
+    font-size: 1rem;
+    padding: 22px 20px;
     border-radius: 10px;
     z-index: 999;
     width: 110%;
     margin-bottom: 20px;
+    line-height: 1.5rem;
+    height: 160px;
 }
 .pdetail div h4{
     color: var(--clr-text);
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 400;
     opacity: .9;
 }
@@ -218,7 +233,7 @@ a{
 }
 .pdetail div a{
     color: var(--clr-text);
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 400;
     margin-top: 15px;
     cursor: pointer;
@@ -233,7 +248,7 @@ a{
 }
 .pimage img{
     width: 100%;
-    height: 100%;
+    height: 320px;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
@@ -243,7 +258,7 @@ a{
 
 
 .contact{
-    padding: 7vw 15vw;
+    padding: 7vw 15vw 12vw;
     display: flex;
     justify-content: center;
 }
@@ -251,13 +266,14 @@ a{
 
 }
 .cheading h1{
-    font-size: 3.5rem;
+    font-size: 2rem;
     line-height: 1;
-    font-weight: 400;
+    font-weight: 600;
 }
 .cheading h1:nth-child(2){
-    color: transparent;
-    -webkit-text-stroke: 1px var(--clr-text);   
+    /* color: transparent;
+    -webkit-text-stroke: 1px var(--clr-text);   */
+    color: var(--clr-text); 
 }
 
 .cdetail{
@@ -266,32 +282,32 @@ a{
     padding: 1rem 0;
 }
 .cdetail h1{
-    font-size: 4.5rem;
-    margin-top: 1rem;
+    font-size: 3rem;
+    margin-top: .8rem;
     color: var(--clr-text);
 }
 .cdetail h5{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--clr-text);
     opacity: .9;
     font-weight: 400;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .cdetail button{
-    padding: 1.1rem 2.3rem;
-    font-size: 1.3rem;
+    padding: .9rem 2rem;
+    font-size: 1rem;
     border-color: var(--clr-primary);
     background-color: var(--clr-background);
     border-radius: 6px;
 }
 .cdetail span{
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 footer{
    display: flex;
    justify-content: center;
-   font-size: 1rem;
+   font-size: .8rem;
 }
 
 .overlay{
